@@ -44,6 +44,7 @@
                             <tr>
                                 <th class="text-center">no</th>
                                 <th class="text-center">post</th>
+                                <th class="text-center">hastag</th>
                                 <th class="text-center">url_image</th>
                                 <th class="text-center">day</th>
                                 <th class="text-center">time</th>
@@ -53,6 +54,7 @@
                             <tr class="table-sm">
                                 <td class="text-center">1</td>
                                 <td class="text-center">a post </td>
+                                <td class="text-center">#hastag</td>
                                 <td class="text-center">url from pinterest</td>
                                 <td class="text-center">wednesday</td>
                                 <td class="text-center">13:30:00</td>

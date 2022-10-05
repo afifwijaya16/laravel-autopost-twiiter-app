@@ -13,8 +13,9 @@ class PostsImport implements ToCollection, WithHeadingRow
     {		
         foreach ($rows as $row) 
         {
+            // dd($row);
             Posttwitter::create([
-                'post' => $row['post'],
+                'post' => $row['post'].'/n'.$row['hastag'],
                 'url_image_post'=> $row['url_image'],
                 'day_post'=> $row['day'],
                 'time_post'=> $this->transformDate($row['time'])
