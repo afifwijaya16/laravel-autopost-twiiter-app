@@ -79,6 +79,22 @@
                                         @enderror
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td valign="top" width="30%">Status Post</td>
+                                    <td valign="top" width="2%">:</td>
+                                    <td valign="top">
+                                        <select name="status_post" class="form-control form-control-sm @error('status_post') is-invalid @enderror">
+                                            <option disabled selected>--Pilih Status--</option>
+                                            <option value="Aktif" @if ($post->status_post == 'Aktif') {{ 'selected' }} @endif>Aktif</option>
+                                            <option value="Tidak Aktif" @if ($post->status_post == 'Tidak Aktif') {{ 'selected' }} @endif>Tidak Aktif</option>
+                                        </select>
+                                        @error('time_post')
+                                        <div class="invalid-feedback">
+                                            {{ $message }}
+                                        </div>
+                                        @enderror
+                                    </td>
+                                </tr>
                                 
                             </table>
                         </div>

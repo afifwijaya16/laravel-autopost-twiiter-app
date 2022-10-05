@@ -16,5 +16,6 @@ class Posttwitter extends Model
         // 'date_post',
         'day_post',
         'time_post',
+        'status_post',
     ];
 }

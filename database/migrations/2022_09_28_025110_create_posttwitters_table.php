@@ -21,6 +21,7 @@ class CreatePosttwittersTable extends Migration
             $table->string('day_post');
             // $table->date('date_post');
             $table->time('time_post');
+            $table->enum('status_post', ['Aktif', 'Tidak Aktif'])->default("Aktif");
             $table->timestamps();
         });
     }

@@ -31,6 +31,36 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
+            <div class="modal-body">
+                <div class="col-md-12">
+                    <div class="alert alert-warning alert-dismissible">
+                        <button type="button" class="close" data-dismiss="alert"
+                            aria-hidden="true">&times;</button>
+                        <h4><i class="icon fa fa-info"></i> Warning!</h4>
+                        - Format Import Data Post <br>
+                    </div>
+                    <table id="dataTable" class="table table-sm table-bordered table-striped" width="100%">
+                        <thead>
+                            <tr>
+                                <th class="text-center">no</th>
+                                <th class="text-center">post</th>
+                                <th class="text-center">url_image</th>
+                                <th class="text-center">day</th>
+                                <th class="text-center">time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="table-sm">
+                                <td class="text-center">1</td>
+                                <td class="text-center">a post </td>
+                                <td class="text-center">url from pinterest</td>
+                                <td class="text-center">wednesday</td>
+                                <td class="text-center">13:30:00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
             <form action="{{ route('importpost') }}" method="POST" enctype="multipart/form-data">
                 <div class="modal-body">
                     @csrf

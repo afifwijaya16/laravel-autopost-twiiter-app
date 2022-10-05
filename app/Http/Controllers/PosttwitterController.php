@@ -110,6 +110,7 @@ class PosttwitterController extends Controller
             'url_image_post' => 'required',
             // 'date_post' => 'required',
             'time_post' => 'required',
+            'status_post' => 'required',
             // 'image_post' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
         ]);
 
@@ -135,6 +136,7 @@ class PosttwitterController extends Controller
                 'day_post' => $request->day_post,
                 // 'date_post' => $request->date_post,
                 'time_post' => $request->time_post,
+                'status_post' => $request->status_post,
             ];
         // }
 
