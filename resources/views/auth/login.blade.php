@@ -4,8 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <?php $profil = \App\Models\Profiltoko::first(); ?>
-    <title>{{ $profil->nama_toko }}</title>
+    <title>Laravel</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
