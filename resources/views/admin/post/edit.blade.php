@@ -48,6 +48,7 @@
                                     <td valign="top">
                                         <select class="form-control form-control-sm @error('day_post') is-invalid @enderror"  name="day_post">
                                             <option disabled selected>--Select day--</option>
+                                            <option value="all" @if ($post->day_post == 'all') {{ 'selected' }} @endif>All Day</option>
                                             <option value="monday" @if ($post->day_post == 'monday') {{ 'selected' }} @endif>Monday</option>
                                             <option value="tuesday" @if ($post->day_post == 'tuesday') {{ 'selected' }} @endif>Tuesday</option>
                                             <option value="wednesday" @if ($post->day_post == 'wednesday') {{ 'selected' }} @endif>Wednesday</option>

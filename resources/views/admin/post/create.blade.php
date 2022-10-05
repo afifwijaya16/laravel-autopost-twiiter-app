@@ -47,6 +47,7 @@
                                     <td valign="top">
                                         <select class="form-control form-control-sm @error('day_post') is-invalid @enderror"  name="day_post">
                                             <option disabled selected>--Select day--</option>
+                                            <option value="all">All Day</option>
                                             <option value="monday">Monday</option>
                                             <option value="tuesday">Tuesday</option>
                                             <option value="wednesday">Wednesday</option>
