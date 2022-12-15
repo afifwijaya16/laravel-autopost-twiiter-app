@@ -22,6 +22,7 @@ Route::get('/', function () {
 Route::middleware(['auth'])->group(function() {
     Route::get('/dashboard', [HomeController::class, 'Home'])->name('dashboard');
     Route::post('/post-import', [PosttwitterController::class, 'importpost'])->name('importpost');
+    Route::get('/delete-post-all',[PosttwitterController::class, 'deleteselect'])->name('post.deleteselect');
     Route::resource('/post', PosttwitterController::class)->names('post');
 });
 require __DIR__.'/auth.php';

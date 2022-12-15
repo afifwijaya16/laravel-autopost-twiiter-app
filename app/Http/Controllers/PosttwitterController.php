@@ -7,7 +7,7 @@ use App\Models\Posttwitter;
 use File;
 use App\Imports\PostsImport;
 use Maatwebsite\Excel\Facades\Excel;
-
+use Response;
 class PosttwitterController extends Controller
 {
     /**
@@ -156,5 +156,16 @@ class PosttwitterController extends Controller
         $post = Posttwitter::findorfail($id);
         $post->delete();
         return redirect()->route('post.index')->with('status', 'Berhasil menghapus data');
+    }
+
+    public function deleteselect(Request $request) 
+    {
+        $ids = $request->data;
+        $post = Posttwitter::whereIn('id', $ids);
+        $post->delete();
+        return Response::json(array(
+            'success' => true,
+            'status'   =>'Berhasil menghapus data'
+        )); 
     }
 }
